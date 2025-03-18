@@ -4,6 +4,8 @@ title: Infrastruktur
 order: 3.3
 ---
 
+----
+
 Dieses Strukturdiagramm veranschaulicht den logischen Aufbau der derzeitigen Projektinfrastruktur und zeigt die Zusammenhänge von Systemkomponenten, Nutzer:innen, angebundenen Diensten und externen Institutionen. In den folgenden Abschnitten werden die zentralen Einheiten dieses Modells kurz erklärt und ihre zentralen Funktionsweisen beschrieben.
 
 [![arkumu.nrw-Strukturdiagramm Stand Juli 2024](/assets/images/2024-07-03_Strukturdiagramm.png 'Das Strukturdiagramm veranschaulicht den logischen Aufbau der intendierten Projektinfrastruktur')](/assets/images/2024-07-03_Strukturdiagramm.png)

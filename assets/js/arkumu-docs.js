@@ -244,7 +244,8 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         table_container.style.cursor = 'auto';
         table_container.style.overflowX = 'hidden';
-        table_container.style.border ='2px solid #e8e8e8';
+        table_container.style.border ='2px solid gray';
+        table_container.style.maxWidth = '98%';
       }
 
       // Maussteurung der Tabellen mit  //
@@ -338,8 +339,9 @@ function initialize_search() {
                 if (query !== '') {
                     performSearch(query, searchData, searchResultsContainer);
                     searchResultsContainer.style.display = 'block';
-                    searchResultsContainer.style.border = '1px solid #ccc';
-                    searchResultsContainer.style.width = '397px';
+                    searchResultsContainer.style.border = '2px solid gray';
+                    searchResultsContainer.style.width = '446px';
+                    searchResultsContainer.style.fontSize = '14px';
                 } else {
                     searchResultsContainer.innerHTML = '';
                     searchResultsContainer.style.display = 'none';

@@ -4,6 +4,8 @@ title: Lizenzen
 order: 2.9
 ---
 
+----
+
 arkumu.nrw hat für den Umgang mit urheberrechtlich und leistungsschutzrechtlich geschütztem Material eine Modularlizenz entwickelt, mit der sich die einliefernde Hochschule bestimmte Rechte von den Rechteinhaber:innen einräumen lassen kann. Es gibt drei Stufen, die aufeinander aufbauen:
 
 | **A – Langzeitverfügbarkeit** | Das Werk kann von der [eigenen] Hochschule zu Archivzwecken vervielfältigt werden. Dies beinhaltet auch eine Digitalisierung des Werks. Eine Bearbeitung des Werks ist nur zulässig, wenn für Zwecke der Langzeitverfügbarkeit eine Umwandlung bestehender Dateiformate in andere Dateiformate erforderlich ist und diese Umwandlung eine Bearbeitung darstellen sollte. |

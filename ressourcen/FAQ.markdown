@@ -4,6 +4,8 @@ title: Häufig gestellte Fragen
 order: 2.6
 ---
 
+----
+
 * TOC
 {:toc}
 

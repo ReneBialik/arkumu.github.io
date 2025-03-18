@@ -42,8 +42,6 @@
 body { 
   font: 400 16px/1.5 'Roboto Mono', monospace;
   font-size: 100%;
-  color: #111;
-  background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -65,7 +63,9 @@ body {
  .header-container {
    display: flex;
    justify-content: space-between;
-   border-bottom: 1px solid lightgray;
+   border-bottom: 4px solid lightgray;
+   padding-top: 0.5%;
+   padding-bottom: 0.5%;
    padding-left: 1%;
    padding-right: 1%;
    margin-bottom: 5%;
@@ -75,36 +75,6 @@ body {
    .header-container {
      margin-bottom: 0%;
    }
- }
- 
- /*---- Navigations-Elemente auf der linken Seite ----*/
- /*---- Navigation elements on the left----*/
- 
- .digi-kunst-icon {
-   filter: brightness(1.4);
-   width: 60px;
-   height: auto;
-   padding-bottom: 5px;
- }
- 
- .site-title {
-   font-size: 24px;
-   text-decoration: none;
-   font-weight: 400;
-   letter-spacing: -1px;
-   margin-bottom: 0;
-   margin-top: 2px;
-   float: left;
-   color: #424242;
- }
- 
- .site-title:hover {
-   color: #424242;
-   text-decoration: underline;
- }
- 
- .site-title:visited {
-   color: #424242;
  }
  
  /*---- Navigations-Elemente in der Mitte: Styling der Elemente in der  .navigation.html im _includes-Ordner ----*/
@@ -140,7 +110,7 @@ body {
  }
  
  .nav-link {
-   padding: 14px 15px;
+   padding: 16px;
    display: inline-block;
    color: #333;
    text-decoration: none;
@@ -165,7 +135,7 @@ body {
    top: 100%;
    left: 0;
    z-index: 2;
-   min-width: 300px;
+   min-width: 425px;
    background-color: #fff;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    background-color: #fdfdfd;
@@ -179,7 +149,8 @@ body {
  }
  
  .dropdown-menu a:hover {
-   background-color: #f7f1ff;
+   background-color: whitesmoke;
+   color: blue;
  }
  
  .dropdown-menu .submenu {
@@ -209,18 +180,17 @@ body {
  }
  
  .search-input {
-   margin-top: 17px;
-   padding: 8px 4px 8px 50px;
-   border: none;
-   border-bottom: 1px solid #ccc;
+   margin-top: 12px;
+   padding: 10px 10px 10px 50px;
+   border: 4px solid blue;
    font-family: 'Roboto Mono', monospace;
-   font-size: 16px;
-   width: 400px;
+   font-size: 14px;
+   width: 450px;
    box-sizing: border-box;
-   background-color: #fdfdfd;
+   background-color: white;
    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="rgba(0, 0, 0, 0.5)" d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>');
    background-repeat: no-repeat;
-   background-position: 0px center;
+   background-position: 10px center;
    background-size: 24px;
  }
  
@@ -237,7 +207,7 @@ body {
  .search-results {
    font-size: smaller;
    cursor: pointer;
-   background-color: #fafafa;
+   background-color: white;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
    display: none;
    position: absolute;
@@ -246,19 +216,19 @@ body {
  }
  
  .search-results a {
-   color:#333;
+   color:black;
    text-decoration: none;
  }
  
  .search-results a div {
-   border-top: 2px solid rgb(199, 199, 199);
+   border-top: 2px solid lightgray;
    padding: 2%;
-   background-color: #fdfdfd;
  }
  
  .search-results a div:hover {
-   background-color: #f7f1ff;
- }
+   background-color: whitesmoke;
+   color: blue;
+  }
  
  /**************************************************************************************************************************************************/
  
@@ -280,9 +250,7 @@ body {
  .mobile-search-input {
    outline: none;
    padding: 8px 4px 8px 40px;
-   border: none;
-   border-bottom: 1px solid #ccc;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border: 2px solid blue;
    font-family: 'Roboto Mono', monospace;
    font-size: 14px;
    width: 100%;
@@ -306,10 +274,10 @@ body {
  
  
  .mobile-search-results {
-   font-size: smaller;
+   font-size: 10px;
    cursor: pointer;
-   background-color: #fafafa;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   border: 2px solid black;
+   background-color: white;
    display: none;
    position: absolute;
    top: calc(100% + 10px);
@@ -348,11 +316,9 @@ body {
  @media screen and (max-width: 1380px) {
    .site-nav {
      position: absolute;
-     top: 21px;
+     top: 23px;
      right: 5px;
-     background-color: #fdfdfd;
-     border: 1px solid #e8e8e8;
-     border-radius: 5px;
+     border: 2px solid lightgray;
      text-align: right;
    }
  }
@@ -483,11 +449,11 @@ body {
  
  .page-content {
    display: flex;
-   margin-bottom: 4%;
+   margin-bottom: 7%;
  }
  
  .page-content a {
-   color: darkblue;
+   color: blue;
  }
  
  .page-content a:hover {
@@ -504,18 +470,17 @@ body {
  }
  
  .left-aside-content {
-   flex: 1;
+   flex: 0.8;
  }
  
  .main-content {
-   flex: 4;
+   flex: 4.2;
    min-height: 65vh;
    overflow-x: auto;
    margin-bottom: 1%;
  }
  
  .post-content {
-   text-align: justify;
    hyphens: auto;
  }
  
@@ -585,10 +550,12 @@ body {
  .worm-indicator {
    position: fixed;
    margin-left: 4%;
+   margin-top: 0.2%;
    overflow-y: auto;
    width: 5px;
    height: 20px;
-   background-color: #ead8ff;
+   background-color: blue;
+   opacity: 0.5;
    transition: top 0.3s ease;
  }
  
@@ -638,6 +605,8 @@ body {
  
  .post-title {
    font-size: 42px;
+   margin-top: 4%;
+   margin-bottom: 4%;
    letter-spacing: - 1px;
    line-height: 1;
  }
@@ -748,15 +717,18 @@ body {
  /*---- Vertikale Linie ----*/
  /*---- Horizontal Rule ----*/
  
- hr {
-   margin-bottom: 4%;
-   margin-top: 4%;
- }
+  hr {
+    color: lightgray;
+    border-width: 2px;
+    border-style: dashed;
+    margin-bottom: 6%;
+    margin-top: 6%;
+  }
  
  @media screen and (max-width: 1380px) {
    hr {
-     margin-bottom: 8%;
-     margin-top: 8%;
+     margin-bottom: 10%;
+     margin-top: 10%;
    }
  }
  
@@ -776,10 +748,8 @@ img {
 
  .post-content img {
    display: block;
-   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 95%;
+   border: 2px solid gray;
+   max-width: 98%;
    margin-top: 2%;
    margin-bottom: 2%;
  }
@@ -812,10 +782,10 @@ img {
  
  video {
    display: block;
-   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
    margin-left: auto;
    margin-right: auto;
-   max-width: 95%;
+   max-width: 98%;
+   border: 2px solid gray;
    margin-top: 4%;
    margin-bottom: 4%;
  }
@@ -904,7 +874,7 @@ img {
    margin-bottom: 6%;
    overflow-x: scroll;
    max-width: 100%;
-   border: 2px solid #bbb;
+   border: 2px solid gray;
  }
  
  @media screen and (max-width: 1380px) {
@@ -921,42 +891,29 @@ img {
    border-collapse: collapse;
  }
  
- table tr:nth-child(odd) {
-   background-color: #ffffff;
- }
- 
- table tr:nth-child(odd):hover {
-   background-color: #f7f1ff;
- }
- 
- table tr:nth-child(even) {
-   background-color: #fafafa;
- }
- 
- table tr:nth-child(even):hover {
-   background-color: #f7f1ff;
- }
- 
  table th, table td {
-   min-width: 133px;
-   padding: 5px;
+   min-width: 250px;
+   padding-left: 10px;
+   padding-right: 20px;
+   padding-top: 25px;
+   padding-bottom: 25px;
    font-size: 80%;
+   border-bottom: 1px solid gray;
+ }
+
+ table th {
+  font-size: 90%;
+  background-color: whitesmoke;
+ }
+
+ table tr:hover {
+  background-color: whitesmoke;
  }
  
  @media screen and (max-width: 1380px) {
    table th, table td {
      font-size: 70%;
    }
- }
- 
- table th {
-   background-color: #f9f4ff;
-   border: 1px solid #dedede;
-   border-bottom-color: #c9c9c9;
- }
- 
- table td {
-   border: 1px solid #e8e8e8;
  }
  
  /*---- Fußnoten ----*/
@@ -1188,32 +1145,6 @@ img {
  
  /*************************************************************************************************/
  
- /******************
- *Last-Modified-Bar*
- *******************/
- 
- .last-modified-date-time-container {
-   display: flex;
-   margin-top: 2%;
-   margin-left: 3%;
-   margin-right: 2.4%;
-   margin-bottom: 1%;
- }
- 
- .last-modified-date-time {
- flex: 1;
- text-align: right;
- font-size: small;
- }
- 
- @media screen and (max-width: 1380px) {
-   .last-modified-date-time {
-     font-size: 60%;
-   }
- }
- 
- /*************************************************************************************************/
- 
  
  /********
   *Footer*
@@ -1221,17 +1152,18 @@ img {
  
   .footer-container {
    display: flex;
-   border-top: 1px solid lightgray;
+   border-top: 4px solid lightgray;
    padding-left: 1%;
    padding-right: 1%;
-   padding-top: 1%;
-   padding-bottom: 1%;
+   padding-top: 3%;
+   padding-bottom: 4%;
  }
  
  .left-footer {
    font-size: small;
    padding-top: 1.6%;
-   flex: 1.5;
+   margin-left: 50px;
+   flex: 5;
  }
  
  .left-footer a {
@@ -1243,7 +1175,7 @@ img {
  }
  
  .center-footer {
-   flex: 2;
+   flex: 1;
    padding-top: 1.6%;
    padding-left: 2%;
  }
@@ -1267,39 +1199,22 @@ img {
    font-weight: 500;
  }
  
- .right-footer {
-   margin-top: 0.9%;
-   flex: 3;
-   display: block;
+ .picture-container {
+    flex: 1;
+    display: block;
  }
  
- .right-footer img {
-   margin-bottom: 0%;
-   margin-top: 0%;
+ .picture-container img {
+   margin-bottom: 15px;
+   border: none;
    filter: grayscale(1);
+   min-width: 120px;
  }
  
- .right-footer img:hover {
+ .ricture-container img:hover {
    filter: grayscale(0);
    filter: brightness(1) !important;
    opacity: 1;
- }
- 
- .right-footer-mobile {
-   display: none;
- }
- 
- .right-footer-mobile img {
-   display: inline-block;
-   margin-bottom: 2%;
-   margin-top: 2%;
-   filter: grayscale(1);
- }
- 
- .right-footer-mobile img:hover {
-   filter: grayscale(0);
-   opacity: 1;
-   filter: brightness(1) !important;
  }
  
  /*----Styling for mittlere Bildschirme--*/
@@ -1319,7 +1234,6 @@ img {
    
    .center-footer {
      margin-top: 6%;
-     margin-bottom: 4%;
      display: inline-block;
    }
  
@@ -1340,6 +1254,11 @@ img {
    .footer-container {
      display: block;
    }
+
+   .footer-container {
+    padding-top: 9%;
+    padding-bottom: 4%;
+    }
    
    .center-footer {
      padding-left: 2%;

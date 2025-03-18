@@ -4,6 +4,8 @@ title: Entitäten und Attribute des Datenmodells
 order: 2.4
 ---
 
+----
+
 Die Aufgabe von arkumu.nrw ist es, die multimedialen künstlerischen Inhalte der Kunst- und Musikhochschulen des Landes NRW zu erschließen und zu sichern. Hauptsächlich sind das künstlerische Werke, aber auch viele Dinge, die sich nicht wirklich als Werk beschreiben lassen, wie z. B. Aufzeichnungen von Vorträgen.
 
 ----
